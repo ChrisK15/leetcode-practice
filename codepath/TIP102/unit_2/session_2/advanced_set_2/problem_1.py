@@ -33,6 +33,8 @@ def max_attempts(ingredients, target_meal):
     for x in target_meal:
         if x in d:
             l.append(d[x])
+        else:
+            return 0
     return min(l)
 
 
